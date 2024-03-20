@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+}
+
+.main{
+    background: url(https://i.postimg.cc/d3RBJ7NV/backdrop.avif);
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center; 
+}
+a{
+    text-decoration: none;
+    /* color:#fff; */
+    transition: 0.5s;
+}   
+a:hover{
+    color: orangered;
+}
+.nav{
+    background:rgb(255, 205, 56);
+    border-bottom:1px solid rgba(68, 68, 68,0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 70px;
+    padding-inline: 13px;
+    color: orangered;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    color:#000;
+    
+}
+.nav ul li i{
+    font-size: 20px;
+}
+
+.searchSection{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:8%;
+
+}
+.searchSection >h1 > span{
+  color: orangered;
+  font-family: playfair display;
+}
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1 > span{
+    color: orangered;
+    font-family: playfair display;
+  }
+.searchSection >h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: playfair display;
+}
+.foodShow >h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: playfair display;
+}
+#search{
+    width: 20rem;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 25px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 15px;
+    font-family: playfair display;
+    color: orangered;
+    
+}
+
+#searchBtn{
+    font-size: 25px;
+    font-weight: bold;
+    background: orangered;
+    padding: 7px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color:#fff;
+}
+#other{
+    margin-left: 20px;
+    cursor: pointer;
+    color:#000;
+}
+#searchBtn:hover{
+    background: #fff;
+    color: orangered;
+}
+
+
+#show{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
+    margin-top: 20px;
+}
+
+.foodShow{
+    width: 80%;
+    margin: auto;
+}
+#show > div{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+#show >div:hover{
+   
+    transform: scale(1.05);
+}
+#show > div img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#show > div >.text,#show > div >.price{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    margin: 10px;
+}
+#show > div >.text > p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#show > div >.text > p:nth-child(2):hover{
+    transform: scale(1.2);
+}
+
+
+#show > div >.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: orangered;
+    
+}
+
+
+#show > div >.price button{
+    background: orangered;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#show > div >.price button:hover{
+    transform: scale(1.2);
+}
+
+
+.nav .logo img{
+    width:22%;
+
+}
+
+@media(max-width:990px){
+    .nav .logo img{
+        width:32%;
+    }
+}
+@media(max-width:768px){
+    .nav .logo img{
+        width:50%;
+    }
+}
